@@ -245,14 +245,14 @@ h3.myStory {
         } 
     }
 }
-
+/*
 img#gitHub {
     display: inline-block;
     width: 15vw;
     height: 12vw;
     align-self: center;
 }
-
+*/
 .aboutMe {
     p {
         display: inline-block;
@@ -278,6 +278,12 @@ img#gitHub {
             cursor: pointer;
             @include boxShadow333;
         } 
+    }
+    img {
+    display: inline-block;
+    width: 15vw;
+    height: 12vw;
+    align-self: center;
     }
 }
 

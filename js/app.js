@@ -19,9 +19,6 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 	});
 	
 
-
-
-
 //sprawdź przy ładowaniu strony rozmiar okna przeglądarki...
 	var windowWidth = $(window).width();
 	if (windowWidth < 920) { // ...i dostosuj sposób wyświetlania
@@ -50,31 +47,42 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 			"width": "90%",
 			"margin": "0 auto"
 		});
+		$("h2").css(
+		{
+			"fontSize": "6vw" // dodatkowo - wcześniej nie było
+		});
+		$("h3").css(
+		{
+			"fontSize": "5vw" // dodatkowo - wcześniej nie było
+		});
 		$(".aboutMe, .my-works, .my-interests").css(
 		{
-			"fontSize": "2.5vw",
+			"fontSize": "3.5vw", // było 2.5 - za mało!
 			"text-align": "left"
 		});
-		$(".techno h4").css(
+		$("h4").css( //.techno
 		{
-			"fontSize": "3.5vw",
+			"fontSize": "4vw", // było 3.5 - za mało!
 			"textAlign": "center"
 		});
 		$(".techno p").css(
 		{
-			"fontSize": "2.5vw"
+			"fontSize": "3.5vw" // było 2.5 - za mało!
 		});
 		$(".my-works img").css(
 		{
-			"width": "45vw"
+			"width": "45vw",
+			"height": "24vw"
 		});
-		$("img#gitHub").css(
+		$(".aboutMe img#gitHub").css(
 		{
-			"width": "45vw"
+			"width": "45vw",
+			"height": "36vw"
 		});
 		$(".my-interests img").css(
 		{
-			"width": "45vw"
+			"width": "45vw",
+			"height": "24vw"
 		});
 		$(".pictureAdditional img").css(
 		{
@@ -88,11 +96,11 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 		});
 		$(".photo p").css(
 		{
-			"fontSize": "2.5vw"
+			"fontSize": "3.5vw" // było 2.5 - za mało!
 		})
 		$("a").css(
 		{
-			"fontSize": "2vw"
+			"fontSize": "4vw" // było 2 - za mało!
 		});
 		$(".littleTitle").css(
 		{
