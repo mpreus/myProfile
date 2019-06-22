@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // nazwa technologii do zmiennych:
-	var technoName = $("h4");
+	let technoName = $("h4");
 // kliknięcie w nazwę technologii (h4) uruchamia funkcję:
 	technoName.on("click", function() {
 		$(this).next().toggle("slow");
@@ -9,13 +9,22 @@ $(document).ready(function() {
 element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje wartościami 'none' i 'block'
 */
 
-	var aboutMeModule = $("h3.myStory");
+	let aboutMeModule = $("h3.myStory");
 	aboutMeModule.on("click", function() {
 		$(this).next().toggle("slow")
 	});	
 
+// zegar na stronie:
+	let myClock = setInterval(timer, 1000);
+	function timer() {
+		let theDate = new Date();
+		let theTime = theDate.toLocaleTimeString();
+		$("#clock").html(theTime);
+	}
+
+
 //sprawdź przy ładowaniu strony rozmiar okna przeglądarki...
-	var windowWidth = $(window).width();
+	let windowWidth = $(window).width();
 	if (windowWidth < 920) { // ...i dostosuj sposób wyświetlania
 		aboutMeModule.next().css("display", "none");
 		$(".twoSections").css("display", "block");
@@ -26,7 +35,7 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 			"width": "90%",
 			"margin": "0 auto"
 		});
-		
+
 		$(".jumbotron").css(
 		{
 			"padding-top": "4vw",
@@ -121,6 +130,11 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 		{
 			"fontSize": "2vw",
 			"lineHeight": "2.5vw"
+		});
+
+		$("#clock").css(
+		{
+			"font-size": "3vw"
 		});
 	};	 	
 });
