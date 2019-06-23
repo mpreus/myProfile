@@ -30,9 +30,10 @@ header {
   margin-right: 3vw; }
 
 #clock {
-  color: #004a43 !important;
+  color: #953F00 !important;
   font-size: 2vw;
   font-weight: 700;
+  text-shadow: 0.07vw 0.07vw 0.09vw #222;
   margin: auto 0;
   margin-left: 2vw; }
 

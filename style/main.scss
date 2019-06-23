@@ -45,9 +45,10 @@ header {
 }
 
 #clock {
-    color: darken($color-main, 15%) !important; 
+    color: $color-supplementary !important; 
     font-size: 2vw;
     font-weight: 700;
+    text-shadow: 0.07vw 0.07vw 0.09vw #222;
     margin: auto 0;
     margin-left: 2vw;
 }
@@ -359,7 +360,7 @@ h3.myStory {
     box-shadow: .5vw .5vw .5vw #111;}
 }
 @keyframes img {
-    100%{box-shadow: .5vw .5vw .5vw #111}
+    100%{box-shadow: .5vw .5vw .5vw #111;}
 }
 
 #interests1 h3, #interests2 h3 {
