@@ -14,7 +14,7 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 		$(this).next().toggle("slow")
 	});	
 
-// zegar na stronie:
+// clock na stronie:
 	let myClock = setInterval(timer, 1000);
 	function timer() {
 		let theDate = new Date();
