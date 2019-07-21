@@ -216,6 +216,11 @@ h3.myStory {
             cursor: pointer;
             @include boxShadow333;
         } 
+    } 
+}
+.techno p > a.my-tech-link {
+    color: #fff;
+    &:hover {
+        text-decoration: none;
     }
-    
 }

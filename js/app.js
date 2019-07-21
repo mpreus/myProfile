@@ -72,9 +72,10 @@ element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje war
 		
 		$(".techno p").css(
 		{
-			"fontSize": "4vw" // było 2.5 - za mało!
+			"fontSize": "4vw", // było 2.5 - za mało!
+			"color": "white"
 		});
-		
+
 		$(".my-works img").css(
 		{
 			"width": "40vw",
