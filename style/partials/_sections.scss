@@ -1,0 +1,221 @@
+@import "_variables.scss";
+
+// SECTIONS
+.twoSections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2vw;
+}
+
+.section2, .section3, .section4, .section5 {
+    width: 49%;
+    border-radius: .3vw;
+    box-shadow: .5vw .5vw .5vw #999;
+}
+
+.section2, .section3 {
+    background: lighten($color-supplementary, 25%);
+}
+
+.section4, .section5 {
+    background: lighten($color-main, 25%);
+}
+
+
+.aboutMe, .techno, .my-works, .my-interests {
+	margin: 0 auto;
+    padding: 2vw 3vw;
+    font-size: 1.6vw;
+}
+
+#myAccounts {
+    display: flex;
+    flex-direction: column;
+    img {
+        margin-top: -2vw;
+    }
+    p {
+        margin-top: 3vw;
+        font-weight: 700;
+    }
+    h4 {
+        text-align: center;
+        margin-top: 2vw;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    font-weight: 700;
+    color: darken($color-main, 15%);
+    text-align: center;
+}
+
+#myWorks, #myInterests {
+    color: darken($color-supplementary, 15%);
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2.6vw;
+    color: darken($color-main, 15%);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.techno h4 {
+    margin: 0;
+    padding: 1vw;
+    border: .09vw solid #000;
+    border-radius: .5vw;
+    color: #fff;
+    background-color: $color-main;
+	background: rgba(0,150,136,1);
+    background: -moz-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,136,1)), color-stop(28%, rgba(0,150,136,1)), color-stop(100%, rgba(18,20,20,1)));
+    background: -webkit-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+    background: -o-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+    background: -ms-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+    background: linear-gradient(to bottom, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009688', endColorstr='#121414', GradientType=0 );
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        @include boxShadow333;
+    }
+}
+
+.techno p {
+    padding: 1vw;
+    margin: 0;
+    border: .09vw solid #666;
+    border-radius: .5vw;
+    background-color: darken($color-main, 15%);
+    font-size: 2vw;
+    text-align: center;
+    color: #fff;
+}
+
+p.show-hide, div.show-hide {
+	display: none;
+}
+
+h3.myStory {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.my-works-1, .my-works-2, .my-works-3, .my-works-4 {
+    margin-bottom: 3vw;
+    img {
+        display: inline-block;
+        width: 15vw;
+        height: 12vw;
+    }
+    p {
+        display: inline-block;
+        margin-bottom: .4vw;
+    }
+    a {
+        margin-left: 4vw;
+        border: .09vw solid #666;
+        padding: 1vw;
+        border-radius: .5vw;
+        background-color: darken($color-main, 15%);
+        font-size: 1.6vw;
+        color: #fff;
+        text-decoration: none;
+        background: rgba(149,63,0,1);
+        background: -moz-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(149,63,0,1)), color-stop(100%, rgba(0,0,0,1)));
+        background: -webkit-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#953f00', endColorstr='#000000', GradientType=0 );
+        &:hover {
+            cursor: pointer;
+            @include boxShadow333;
+        } 
+    }
+}
+
+.aboutMe {
+    p {
+        display: inline-block;
+    }
+    a {
+        border: .09vw solid #666;
+        padding: 1vw;
+        border-radius: .5vw;
+        background-color: darken($color-main, 15%);
+        font-size: 1.6vw;
+        color: #fff;
+        text-decoration: none;
+        background: rgba(149,63,0,1);
+        background: rgba(0,150,136,1);
+        background: -moz-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,136,1)), color-stop(28%, rgba(0,150,136,1)), color-stop(100%, rgba(18,20,20,1)));
+        background: -webkit-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+        background: -o-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+        background: -ms-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+        background: linear-gradient(to bottom, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009688', endColorstr='#121414', GradientType=0 );      
+        &:hover {
+            cursor: pointer;
+            @include boxShadow333;
+        } 
+    }
+    img {
+    display: inline-block;
+    width: 15vw;
+    height: 12vw;
+    align-self: center;
+    }
+}
+
+.my-interests-1, .my-interests-2, .my-interests-3, .my-interests-4 {
+    margin-bottom: 3vw;
+    p {
+        margin-bottom: .4vw;
+    }
+}
+
+.my-interests-1, .my-interests-2, .my-interests-3, .my-interests-4 {
+    img {
+        display: inline-block;
+        width: 15vw;
+        height: 12vw;
+    }
+    p {
+        display: inline-block;
+    }
+    a {
+        margin-left: 4vw;
+        border: .09vw solid #666;
+        padding: 1vw;
+        border-radius: .5vw;
+        background-color: darken($color-main, 15%);
+        font-size: 1.6vw;
+        color: #fff;
+        text-decoration: none;
+        background: rgba(149,63,0,1);
+        background: -moz-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(149,63,0,1)), color-stop(100%, rgba(0,0,0,1)));
+        background: -webkit-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -o-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: -ms-linear-gradient(top, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        background: linear-gradient(to bottom, rgba(149,63,0,1) 0%, rgba(0,0,0,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#953f00', endColorstr='#000000', GradientType=0 );
+        &:hover {
+            cursor: pointer;
+            @include boxShadow333;
+        } 
+    }
+    
+}

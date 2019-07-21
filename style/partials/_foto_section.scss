@@ -1,0 +1,64 @@
+@import "_variables.scss";
+
+// FOTO SECTION
+.wrapper {
+    width: 100%;
+    margin-top: 2vw;
+    .obrazek {
+        text-align: center;
+        img {
+            width: 22vw;
+            margin: 0 .5vw;
+            border-radius: .25vw;
+            animation-name: rotation;
+            animation-duration: 3s;
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+            &:hover {
+            animation-play-state: running;
+            }
+        }
+    }
+}
+@keyframes rotation {
+    from{transform: rotateY(50deg)}
+    to{transform: rotateY(0deg);
+    box-shadow: .5vw .5vw .5vw #111;}
+}
+@keyframes img {
+    100%{box-shadow: .5vw .5vw .5vw #111;}
+}
+
+#interests1 h3, #interests2 h3 {
+    padding-top: 2vw;
+}
+
+.photo {
+    margin-top: 2vw;
+    text-align: center;
+    p {
+        font-size: 1.6vw;
+        font-weight: 500;
+        color: #000;
+        a {
+            text-decoration: none;
+            color: #fff;
+            border: .09vw solid #666;
+            padding: 1vw;
+            margin-bottom: 1vw;
+            border-radius: .5vw;
+            background: rgba(0,150,136,1);
+            background: -moz-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,136,1)), color-stop(28%, rgba(0,150,136,1)), color-stop(100%, rgba(18,20,20,1)));
+            background: -webkit-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+            background: -o-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+            background: -ms-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+            background: linear-gradient(to bottom, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009688', endColorstr='#121414', GradientType=0 );
+            &:hover {
+            cursor: pointer;
+            @include boxShadow333;
+            }
+        }
+    }
+}

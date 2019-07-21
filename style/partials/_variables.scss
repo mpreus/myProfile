@@ -1,0 +1,6 @@
+// VARIABLES
+$color-main: #009688;
+$color-supplementary: #953F00;
+@mixin boxShadow333 {
+    box-shadow: 0.5vw 0.5vw 0.5vw #333;
+}
