@@ -20,20 +20,4 @@
     font-weight: 700;
     margin-left: 1vw;
     margin-right: .6vw;
-    &:hover {
-        color: #fff !important;
-        padding-left: .8vw;
-        padding-right: .8vw;
-        border: .09vw solid #666;
-        border-radius: .5vw;
-        @include boxShadow333;
-        background-color: darken($color-main, 15%);
-        background: -moz-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,150,136,1)), color-stop(28%, rgba(0,150,136,1)), color-stop(100%, rgba(18,20,20,1)));
-        background: -webkit-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
-        background: -o-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
-        background: -ms-linear-gradient(top, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
-        background: linear-gradient(to bottom, rgba(0,150,136,1) 0%, rgba(0,150,136,1) 28%, rgba(18,20,20,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009688', endColorstr='#121414', GradientType=0 );
-    }
 }
