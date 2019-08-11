@@ -1,10 +1,14 @@
 $(document).ready(function() {
 // nazwa technologii do zmiennych:
 	let technoName = $("h4");
-// kliknięcie w nazwę technologii (h4) uruchamia funkcję:
-	technoName.on("click", function() {
-		$(this).next().toggle("slow");
-		});
+// najechanie na nazwę technologii (h4) uruchamia funkcję:
+	technoName.mouseenter(function() {
+		$(this).next().show("slow");
+	});
+// zjazd z nazwy zamyka z opóźnieniem
+	technoName.mouseleave(function() {
+		$(this).next().delay(2750).hide("slow");
+	});
 /* 
 element 'p' ma właściwość 'display', którą metoda 'toggle()' żongluje wartościami 'none' i 'block'
 */
